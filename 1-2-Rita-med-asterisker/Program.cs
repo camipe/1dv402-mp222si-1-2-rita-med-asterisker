@@ -10,33 +10,40 @@ namespace _1_2_Rita_med_asterisker
     {
         static void Main(string[] args)
         {
-            for (int row = 1; row < 5; row++)
+            for (int row = 1; row <= 25; row++)
             {
 
-                //switch (row)
-                //{
-                //    case 1:
-                //        ConsoleColor.Yellow;
+                // Checking which color to use for this row
+                switch (row % 3)
+                {
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        break;
 
-                //    case 2:
-                //        ConsoleColor.Magenta;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        break;
 
-                //    case 3:
-                //        ConsoleColor.Green;
-                //}
-                    
+                    case 0:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        break;
+                }
+                    // if the row number can be divided by 2 a space should be printed at the start of the row
                     if ((row % 2) == 0)
                     {
                         Console.Write(" ");
                     }
-                
-                    for (int col = 1; col < 39; col++)
+                    
+                    // Printing "* " 39 times 
+                    for (int col = 1; col <= 39; col++)
                     {
                     
                         Console.Write("* ");
               
                     }
+                    //Creating a new row and reseting the colors before the loop starts over
                     Console.WriteLine();
+                    Console.ResetColor();
                 
             }  
             
