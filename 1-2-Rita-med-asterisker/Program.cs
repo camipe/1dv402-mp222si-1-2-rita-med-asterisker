@@ -10,19 +10,34 @@ namespace _1_2_Rita_med_asterisker
     {
         static void Main(string[] args)
         {
-            for (int row = 0; row < 5; row++)
+            for (int row = 1; row < 5; row++)
             {
-                if ((row % 2) == 0)
-                {
-                    Console.Write();
-                }
+
+                //switch (row)
+                //{
+                //    case 1:
+                //        ConsoleColor.Yellow;
+
+                //    case 2:
+                //        ConsoleColor.Magenta;
+
+                //    case 3:
+                //        ConsoleColor.Green;
+                //}
+                    
+                    if ((row % 2) == 0)
+                    {
+                        Console.Write(" ");
+                    }
                 
-                for (int col = 0; col < 38; col++)
-                {
-                    Console.Write("* ");
-                    Console.Write(" ");
-                }
-                Console.WriteLine();
+                    for (int col = 1; col < 39; col++)
+                    {
+                    
+                        Console.Write("* ");
+              
+                    }
+                    Console.WriteLine();
+                
             }  
             
             
