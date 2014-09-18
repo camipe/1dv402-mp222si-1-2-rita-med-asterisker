@@ -28,26 +28,26 @@ namespace _1_2_Rita_med_asterisker
                         Console.ForegroundColor = ConsoleColor.Green;
                         break;
                 }
-                    // if the row number can be divided by 2 a space should be printed at the start of the row
-                    if ((row % 2) == 0)
-                    {
-                        Console.Write(" ");
-                    }
-                    
-                    // Printing "* " 39 times 
-                    for (int col = 1; col <= 39; col++)
-                    {
-                    
-                        Console.Write("* ");
-              
-                    }
-                    //Creating a new row and reseting the colors before the loop starts over
-                    Console.WriteLine();
-                    Console.ResetColor();
-                
-            }  
-            
-            
+                // if the row number is even, a space should be printed at the start of the row
+                if ((row % 2) == 0)
+                {
+                    Console.Write(" ");
+                }
+
+                // Printing "* " 39 times 
+                for (int col = 1; col <= 39; col++)
+                {
+
+                    Console.Write("* ");
+
+                }
+                //Creating a new row and reseting the colors before the loop starts over
+                Console.WriteLine();
+                Console.ResetColor();
+
+            }
+
+
 
         }
     }
